@@ -381,13 +381,13 @@
         blocks : [
 
             [ 'r', '年何日', 'get_full_date_01' ] ,
-            [ 'r', 'date', 'get_full_e_date_01' ] ,
+            [ 'r', 'e-date', 'get_full_e_date_01' ] ,
 
             [ 'r', '今何時', 'get_full_time_01' ] ,
-            [ 'r', 'time', 'get_full_e_time_01' ] ,
+            [ 'r', 'e-time', 'get_full_e_time_01' ] ,
 
             [ 'r', '格言', 'get_kakugen_01' ] ,
-            [ 'r', 'proverb', 'get_proverb_01' ] ,
+            [ 'r', 'e-proverb', 'get_proverb_01' ] ,
 
             [ ' ', '表示 %s', 'alert', '日本の首都は東京です。' ] ,
 
