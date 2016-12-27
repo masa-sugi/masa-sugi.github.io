@@ -1,7 +1,6 @@
 //
-// My extension-01 
-// Copyright (c) 2016 Masakatsu Sugimoto, Former Professor on Software Engineering at Tokyo University of Information Sciences: TUIS, Chiba, Japan, 
-// all right reserved. 
+// My extension-01: hi_keys.js 
+// Copyright (c) 2016 Masakatsu Sugimoto, Former Professor on Software Engineering at Tokyo University of Information Sciences: TUIS, Chiba, Japan, all right reserved. 
 // 2016.12.17
 //
  new ( function() {
@@ -33,7 +32,6 @@
 'thirty firtst' 
 
  ] ;
-
 
   const kakugen01 = [ 
 
@@ -145,7 +143,7 @@
 
        return true ;
 
-  } // end is_alphanumeric
+  } ; // end is_alphanumeric
 
   ext.get_full_date_01 = function() {
 
@@ -166,12 +164,10 @@
         let h_year01 = year01 - 1988 ;
 
         let full_date01 = '　' + year01 + '年(平成' + h_year01+ '年)' + month01 + '月' + day01 + '日:' + day03 ;
-        // alert( full_date01 ) ;
 
         return full_date01 ;
 
-  } // end get_full_date_01
-
+  } ; // end get_full_date_01
 
   ext.get_full_e_date_01 = function() {
 
@@ -201,11 +197,7 @@
 
         return full_date01 ;
 
-  } // end get_full_e_date_01
-
-
-
-
+  } ; // end get_full_e_date_01
 
   ext.get_full_time_01 = function() {
 
@@ -235,15 +227,14 @@
         var return_value01 = gozen_gogo01 + time_hours01 + '時' ;
 
         if ( time_minites != 0 ) {
-              return_value01 = return_value01 + time_minites + '分'  ; 
-        } ;
 
-        // alert( return_value01 ) ;
+              return_value01 = return_value01 + time_minites + '分'  ; 
+
+        } ;
 
         return return_value01 ;
 
   } ; // end get_full_time_01
-
 
   ext.get_full_e_time_01 = function() {
 
@@ -252,18 +243,18 @@
         var time_hours01 = date01.getHours() ;
         //
         let time_minites = date01.getMinutes() ;
-        // let time_seconds = date01.getSeconds() ;
 
         var return_value01 = time_hours01 + ':' ;
 
         if ( time_minites != 0 ) {
-              return_value01 = return_value01 + time_minites  ; 
+
+              return_value01 = return_value01 + time_minites ; 
+
         } ;
 
         return return_value01 ;
 
   } ; // end get_full_e_time_01()
-
 
   ext.get_kakugen_01 = function() {
 
@@ -277,7 +268,7 @@
 
        return kakugen01[ index01 ] ;
 
- } // end get_kakugen_01
+  } ; // end get_kakugen_01
 
   ext.get_proverb_01 = function() {
 
@@ -291,7 +282,7 @@
 
        return proverb01[ index01 ] ;
 
- } // end get_proverb_01
+ } ; // end get_proverb_01
 
 // -----------------------------------------------------------------
 // -----------------------------------------------------------------
@@ -371,9 +362,10 @@
 
         window.open( location , '_blank' ) ;
 
-    };
+    } ;
 
-
+    // end ext functions ---------------------------------------------
+    // end ext functions ---------------------------------------------
     // end ext functions ---------------------------------------------
 
     // Block and block menu descriptions
@@ -398,8 +390,6 @@
             [' ', 'オープン・サイト %s', 'openTab', 'https://scratch.mit.edu/about'] ,
 
             [ 'w', '読上げ %s', 'html5_tts_api' , 'ありがとう' ] ,
-
-
 
         ]
     } ;
