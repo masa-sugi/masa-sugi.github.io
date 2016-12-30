@@ -151,7 +151,7 @@
 
         let year01 = date01.getFullYear() ;
 
-        let month01 = date01.getMonth() ;
+        let month01 = date01.getMonth() + 1 ;
 
         let day01   = date01.getDate() ;
 
@@ -163,7 +163,7 @@
  
         let h_year01 = year01 - 1988 ;
 
-        let full_date01 = '　' + year01 + '年(平成' + h_year01+ '年)' + month01 + '月' + day01 + '日:' + day03 ;
+        let full_date01 = year01 + '年(平成' + h_year01+ '年)' + month01 + '月' + day01 + '日:' + day03 ;
 
         return full_date01 ;
 
