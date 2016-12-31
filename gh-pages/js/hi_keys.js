@@ -29,7 +29,7 @@
 'sixteenth' , 'seventeenth' , 'eighteenth' , 'nineteenth' , 'twentieth' , 
 'twenty first' , 'twenty second' , 'twenty third' , 'twenty fourth' , 'twenty fifth' , 
 'twenty sixth' , 'twenty seventh' , 'twenty eighth' , 'twenty ninth' , 'thirtieth' , 
-'thirty firtst' 
+'thirty first' 
 
  ] ;
 
@@ -134,16 +134,15 @@
 
   function is_alphanumeric( p_str ) {
 
-       let first_char01 = p_str.charCodeAt( 0 ) ;
+       for ( var i = 0 ; i < p_str.length ; i++ ) {
 
-       if ( !( first_char01 > 47 && first_char01 < 58 ) &&  // numeric 0 - 9
-            !( first_char01 > 64 && first_char01 < 91 ) &&  // A - Z
-            !( first_char01 > 96 && first_char01 < 123 )    // a - z
-          ) return false ;
+             if ( p_str.charCodeAt( i ) > 255 ) return false ;
+       } ;
 
        return true ;
 
   } ; // end is_alphanumeric
+
 
   ext.get_full_date_01 = function() {
 
@@ -163,7 +162,7 @@
  
         let h_year01 = year01 - 1988 ;
 
-        let full_date01 = '　' + year01 + '年(平成' + h_year01+ '年)' + month01 + '月' + day01 + '日:' + day03 ;
+        let full_date01 = year01 + '年(平成' + h_year01+ '年)' + month01 + '月' + day01 + '日:' + day03 ;
 
         return full_date01 ;
 
